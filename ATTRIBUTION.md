@@ -56,3 +56,7 @@ copied in by hand must be MIT, BSD or CC0. No test fixtures are committed to the
 ([`tests/psd_files`](https://github.com/psd-tools/psd-tools/tree/main/tests/psd_files), MIT,
 Copyright (c) 2019 Kota Yamaguchi) at a pinned commit into `corpus/psd-tools/`, verified against
 the sha256 list in `xtask/psd-tools-corpus.sha256`, with the upstream `LICENSE` next to them.
+
+## The Code
+
+We don't know who all of the poor software developers were that the models used to write this god-forsaken program were trained on. Some were paid by companies, research organizations, the government... some did it for free, for the love of the sport. And they all go uncredited.
