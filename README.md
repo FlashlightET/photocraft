@@ -10,26 +10,28 @@
 <h1 align="center">PhotoCraft</h1>
 
 <p align="center">
-  <b>Image editing; an open-source, clean-room reimplementation of Adobe Photoshop, rebuilt in pure Rust.</b><br>
+  <b>Image editing; an open-source, clean-room, slop reimplementation of Adobe Photoshop (We do not own the rights to the name "Photoshop"), rebuilt in, surprisingly, Rust.</b><br>
   Layers, masks, adjustment layers, layer styles, type, vectors, brushes and real PSD files,<br>
-  in a native app written entirely in Rust. Open source, offline, and yours.
+  in a native app written entirely in Rust. Open source, offline, and yours, despite the numerous license violations involved with AI code models.
 </p>
 
 <p align="center">
   <img alt="100% Rust" src="https://img.shields.io/badge/100%25-Rust-b7410e?style=flat-square&logo=rust">
   <img alt="macOS · Windows · Linux · Web" src="https://img.shields.io/badge/macOS%20%C2%B7%20Windows%20%C2%B7%20Linux%20%C2%B7%20Web-native-2f7bf5?style=flat-square">
-  <img alt="License: MIT OR Apache-2.0" src="https://img.shields.io/badge/license-MIT%20%2F%20Apache--2.0-3a3a3a?style=flat-square">
+  <img alt="License: MIT OR Apache-2.0 (Bull-fucking-shit it is)" src="https://img.shields.io/badge/license-MIT%20%2F%20Apache--2.0-3a3a3a?style=flat-square">
   <img alt="Status: early alpha" src="https://img.shields.io/badge/status-early%20alpha-d69e2e?style=flat-square">
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/artcraft"><img alt="Join the ArtCraft community on Discord" src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="40"></a>
+  <a href="https://discord.gg/animefeet"><img alt="Join the ArtCraft community on Discord" src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="40"></a>
 </p>
 
 <p align="center">
-  <a href="https://getartcraft.com/apps/photocraft"><b>PhotoCraft on getartcraft.com</b></a> ·
-  <a href="https://getartcraft.com/">ArtCraft</a> ·
-  <a href="https://getartcraft.com/apps">All Crafting Apps</a>
+  <a href="https://isaiprofitable.com/"><b>PhotoCraft on getartcraft.com</b></a>
+  <a href="https://adobe.com/">All Crafting Apps</a>
+  <a href="https://getpaint.net/">Paint.NET - A good free and open replacement for Photoshop</a>
+  <a href="https://krita.org/">Krita - Another good free and open replacement for Photoshop</a>
+  
 </p>
 
 <br>
@@ -42,18 +44,18 @@
 </p>
 
 > [!NOTE]
-> **ArtCraft is a community of artists from all walks of life.** Digital, generative, music,
-> games &mdash; if you make things, you're one of us. **[Come say hi on Discord](https://discord.gg/artcraft).**
+> **ArtCraft is a community of robots from all kinds of tech corporations.** Digital, generative, music,
+> games &mdash; if you make things, we aim to replace you. **[Come say hi on Discord](https://discord.gg/animefeet).**
 
 <p align="center">
   <a href="#features">Features</a> ·
   <a href="#everything-in-the-box">Everything in the box</a> ·
   <a href="#psd-without-compromise">PSD</a> ·
-  <a href="#built-for-agents">Agents</a> ·
+  <a href="#built-for-agents">Superclankers</a> ·
   <a href="#under-the-hood">Under the hood</a> ·
   <a href="#get-started">Get started</a> ·
   <a href="#the-crafting-apps">Crafting Apps</a> ·
-  <a href="https://discord.gg/artcraft">Discord</a>
+  <a href="https://discord.gg/animefeet">Discord</a>
 </p>
 
 <br>
@@ -66,15 +68,15 @@
     </td>
     <td width="25%" valign="top">
       <h3>⚡ Native and fast</h3>
-      A GPU compositor on wgpu (Metal, Vulkan, DX12, WebGPU), copy-on-write tiles and multithreaded filters. No Electron, no web view, no waiting.
+      A GPU compositor on wgpu (Metal, Vulkan, DX12, WebGPU), copy-on-write tiles and multithreaded filters. No Electron, no web view, no waiting--just slop and vibes, y'know? [Editor's note: I'm actually surprised that the clanker didn't shit out any fucking webview/electron/javascript ass, because thats usually all it knows.]
     </td>
     <td width="25%" valign="top">
       <h3>🗂️ Real PSD files</h3>
-      Open, edit and save layered Photoshop documents. Re-saving keeps the render of 307 of the 309 psd-tools test files.
+      Open, edit and save layered Photoshop documents, just like Paint.NET. Re-saving keeps the render of 307 of the 309 psd-tools test files, unlike Paint.NET.
     </td>
     <td width="25%" valign="top">
-      <h3>🤖 Agent-ready</h3>
-      Every action is a command, so you can drive the same engine from the UI, the CLI, a JSON control channel or an MCP server.
+      <h3>🤖 Superclanker-ready</h3>
+      Every action is a command, so you can drive the same engine from the UI, the CLI, a JSON control channel or an MCP server. Perfect for automating out the last bit of human work.
     </td>
   </tr>
 </table>
@@ -83,14 +85,14 @@
 
 ## Features
 
-Every screenshot here is the real app at work on public-domain art, rendered offscreen through its control channel.
+Every screenshot here is the real app at work on public-domain art, rendered offscreen through its control channel. Whatever that means to the layman.
 
 <table>
   <tr>
     <td width="50%" valign="top">
       <img src="docs/images/photocraft-adjustments.jpg" alt="Monet's Impression, Sunrise with Levels and Vibrance adjustment layers; the Levels editor and the Histogram panel with mean, standard deviation and median are open on the right" width="100%">
       <br>
-      <sub>Levels and Vibrance adjustment layers, with the live Histogram panel.<br><i>Impression, Sunrise</i>, Claude Monet, 1872</sub>
+      <sub>Levels and Vibrance adjustment layers, with the live Histogram panel.<br><i>Impression, Sunrise</i>, Claude Monet, 1872. "Claude," huh? A bit of narcissism, I see? The clanker inserts its namesake.</sub>
       <h3>Edit without regret</h3>
       Adjustment layers keep every edit live. Stack Levels, Curves, Vibrance, Hue/Saturation and a dozen more, mask them to an area, reorder them, or turn them off, and your original pixels never change.
       <br><br>
@@ -123,14 +125,14 @@ Every screenshot here is the real app at work on public-domain art, rendered off
       <h3>Type that sets beautifully</h3>
       Point and paragraph text, edited right on the canvas, with full Character and Paragraph controls: font, weight, size, leading, tracking, alignment and colour.
       <br><br>
-      Type layers stay editable, take layer styles, and round-trip through PSD.
+      Type layers stay editable, take layer styles, and round-trip through PSD. There's nothing I can insert here for all of this really, this stuff's all objective already.
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
       <img src="docs/images/photocraft-vector.jpg" alt="A lotus badge built from shape layers (Lotus, Water, Sun, Badge and Dotted Ring) over Monet's Water Lilies, with the lotus path's anchor points selected" width="100%">
       <br>
-      <sub>A badge made of shape layers: a gradient-filled lotus, a star and a dotted ring.<br><i>Water Lilies</i>, Claude Monet, 1906</sub>
+      <sub>A badge made of shape layers: a gradient-filled lotus, a star and a dotted ring.<br><i>Water Lilies</i>, Claude Monet, 1906. Oh, claude again. Long time no see. I bet you're absolutely ecstatic to see your namesake is being used to make people homeless. All the people once paid for their work...</sub>
       <h3>Pixel-perfect vectors</h3>
       Rectangle, Ellipse, Triangle, Polygon, Line and the Pen tool, with resolution-independent shape layers, gradient fills, and dashed, aligned strokes.
       <br><br>
@@ -219,7 +221,7 @@ PhotoCraft's PSD support is a standalone crate written from Adobe's public speci
 
 ## Built for agents
 
-Every menu item, tool and dialog runs a command from one registry of 500+ commands. The UI, the CLI, the JSON control channel and the MCP server all call the same commands, so anything you can click, a script or an AI agent can do too.
+Every menu item, tool and dialog runs a command from one registry of 500+ commands. The UI, the CLI, the JSON control channel and the MCP server all call the same commands, so anything you can click, a script or an AI agent can do too. Remember when people actually did the work? Pepperidge farm remembers. Heh. I bet the script kiddies prompting these vibecoded repos are too young to even remember that meme!
 
 ```sh
 # Headless: open, edit, save
@@ -242,8 +244,8 @@ The desktop app also offers an authenticated, loopback-only control channel (`ph
 - **Engine first:** a pure-data document model and a command engine, with a thin egui UI on top. Layering is enforced at build time across 24 crates.
 - **Two compositors:** a CPU compositor serves as the reference oracle, and a wgpu compositor puts the canvas on the GPU. They are tested against each other.
 - **Copy-on-write tiles:** 256² sparse tiles make undo cheap and huge canvases light, and effect maps are cached per layer state.
-- **Runs in the browser:** the whole engine and UI compile to WebAssembly.
-- **Clean-room:** implemented from public specs and observed behaviour only. No proprietary code, shaders or assets.
+- **Runs in the browser:** the whole engine and UI compile to WebAssembly. Oh god. Fuck no.
+- **Clean-room:** implemented from public specs and observed behaviour only. No proprietary code, shaders or assets. Except for the proprietary code that the model was trained on, digested, and regurgitated back out, of course.
 - **Tested:** more than 1,700 tests, including PSD round trips, synthetic generators, compositor oracles and multi-depth checks.
 
 ## Get started
@@ -267,7 +269,7 @@ flatpak run ai.storyteller.photocraft
 Maintainers: [`docs/releasing.md`](docs/releasing.md) explains how releases are built, signed and published.
 
 > [!IMPORTANT]
-> **Status:** PhotoCraft is in early alpha, and we want to be straight about where it stands: much of Photoshop's feature surface exists in some form, but **it is not yet a Photoshop replacement for daily professional work**. The biggest gaps are AI/generative features, about twenty missing tools, depth in typography and pro workflows, and plug-in compatibility. Every Photoshop menu item is wired to a command ([`docs/parity.md`](docs/parity.md)), but that measures wiring, not behaviour. The honest, dimension-by-dimension picture and where we're going next are in the [roadmap's parity assessment](docs/roadmap.md#honest-parity-assessment-2026-10-05). Expect rough edges, and please file issues (include your OS, document size, layer count and a screenshot). You can also tell us what broke on [Discord](https://discord.gg/artcraft).
+> **Status:** PhotoCraft is in early alpha, and we want to be straight about where it stands: much of Photoshop's feature surface exists in some form, but **it is not yet a Photoshop replacement for daily professional work**. Despite what the fucking reddit post said. We clickbaited you. The biggest gaps are AI/generative features, probably for the fucking better, about twenty missing tools, depth in typography and pro workflows, and plug-in compatibility. Every Photoshop menu item is wired to a command ([`docs/parity.md`](docs/parity.md)), but that measures wiring, not behaviour. The honest, dimension-by-dimension picture and where we're going next are in the [roadmap's parity assessment](docs/roadmap.md#honest-parity-assessment-2026-10-05). Expect rough edges, and please file issues (include your OS, document size, layer count and a screenshot). You can also tell us what broke on [Discord](https://discord.gg/animefeet).
 
 ## Documentation
 
@@ -279,8 +281,8 @@ Security architecture, threat modeling, parser hardening, fuzzing, and vulnerabi
 
 ## The Crafting Apps
 
-PhotoCraft is one of the **Crafting Apps**: free, open-source creative tools from the
-[ArtCraft](https://getartcraft.com/) team, each written from scratch in Rust and each able to
+PhotoCraft is one of the **Crafting Apps**: free, open-source? slop tools from the
+[Is AI Profitable Yet? (NO.)](https://isaiprofitable.com/) team, each written by an AI fucking clanker in Rust and each able to
 stand on its own.
 
 | | App | What it's for | Code | Learn more |
@@ -293,27 +295,27 @@ stand on its own.
 | <img src="https://raw.githubusercontent.com/storytold/effectcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.effectcraft.png" alt="" width="32" height="32"> | **EffectCraft** | Motion graphics and visual effects | [GitHub](https://github.com/storytold/effectcraft) | [Website](https://getartcraft.com/apps/effectcraft) |
 | <img src="https://raw.githubusercontent.com/storytold/designcraft/main/assets/app-icon/hicolor/64x64/apps/ai.storyteller.designcraft.png" alt="" width="32" height="32"> | **DesignCraft** | Page layout and publishing | [GitHub](https://github.com/storytold/designcraft) | [Website](https://getartcraft.com/apps/designcraft) |
 
-And [**ArtCraft**](https://getartcraft.com/) itself, our AI image and video studio for artists who want real control.
+And [**ArtCraft**](https://isaiprofitable.com/) itself, our AI slop image and video studio for "artists" who don't care about their integrity or job security. We hate you all!
 
-The Crafting Apps share the same conventions: clean-room and pure Rust, native on macOS, Windows and Linux, in the browser via WebAssembly, and fully drivable by agents.
+The Crafting Apps share the same conventions: clean-room and pure Rust, native on macOS, Windows and Linux, in the browser via WebAssembly, and fully drivable by clankers.
 
 <br>
 
 <p align="center">
-  <a href="https://discord.gg/artcraft"><img alt="Join the ArtCraft community on Discord" src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="40"></a>
+  <a href="https://discord.gg/animefeet"><img alt="Join the Anime Feet community on Discord" src="https://img.shields.io/badge/Join%20us%20on%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" height="40"></a>
 </p>
 
 <h3 align="center">Come make things with us</h3>
 
 <p align="center">
-  Our Discord is where artists of every kind hang out: people who paint, shoot, draw, cut film,
-  set type, and people still figuring out what they like to make. Share what you're working on,
-  ask for help, tell us what's broken, or tell us what you wish these tools could do.
-  Whatever your medium and however long you've been at it, you're welcome here.
+  Our Discord is where artists of every kind hang out: people who prompt, slop, train, erase gemini watermarks,
+  tag datasets, and people still figuring out who they want to replace. Share what you're training,
+  ask for help, tell us what won't generate, or tell us who you wish these tools could replace.
+  Whatever your medium and however long you've been at it, **you're next.**
 </p>
 
 <p align="center">
-  <a href="https://discord.gg/artcraft"><b>discord.gg/artcraft</b></a> ·
+  <a href="https://discord.gg/animefeet"><b>discord.gg/animefeet</b></a> ·
   <a href="https://getartcraft.com/">getartcraft.com</a> ·
   <a href="https://getartcraft.com/apps">The Crafting Apps</a> ·
   <a href="https://getartcraft.com/apps/photocraft">PhotoCraft</a>
@@ -334,13 +336,13 @@ Every artwork shown is in the public domain (Wikimedia Commons, NASA, U.S. Natio
 The ArtCraft name, wordmark and logos in [`docs/brand/`](docs/brand/) are trademarks of the
 ArtCraft Team and are not covered by this license. They may be used only unmodified, and only as
 part of this repository and PhotoCraft, under [`docs/brand/LICENSE-brand.txt`](docs/brand/LICENSE-brand.txt).
-Forks and modified versions must remove them.
+Forks and modified versions must remove them, but I won't. Because why should I listen to you? The AI corporations don't listen to us. Maybe I'll listen once you stop using AI for everything!
 
 <sub>Adobe, Photoshop, Illustrator, Premiere Pro, Lightroom, Acrobat, After Effects and InDesign are trademarks or registered trademarks of Adobe Inc. in the United States and/or other countries. PhotoCraft is an independent, open-source project and is not affiliated with, sponsored by or endorsed by Adobe Inc.; these names are used only to describe the workflows it is compatible with.</sub>
 
 <p align="center">
   <a href="https://getartcraft.com/"><img alt="ArtCraft" src="docs/brand/artcraft-mark.svg" width="28"></a><br>
-  <sub>Made by the <a href="https://getartcraft.com/">ArtCraft</a> team and community.</sub>
+  <sub>Made by the <a href="https://getartcraft.com/">ArtCraft</a> team (our team is a bunch of computers in a datacenter) and community (of one fat sweaty nerd in his mom's basement).</sub>
 </p>
 
 
